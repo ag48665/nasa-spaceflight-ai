@@ -134,6 +134,16 @@ df['cluster'] = kmeans.fit_predict(X_scaled)
 ```
 
 ---
+## Key Findings
+
+- Identified highly expressed genes across NASA spaceflight samples
+- Detected transcriptomic outliers using PCA
+- Visualized expression variability using heatmaps
+- Applied machine learning clustering to RNA-seq data
+- Generated comparative transcriptomics visualizations
+  
+---
+
 ## Biological Interpretation of Results
 
 The RNA-seq transcriptomics analysis revealed significant variability in gene expression profiles across NASA spaceflight-related biological samples.
