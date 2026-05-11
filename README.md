@@ -252,6 +252,40 @@ This project demonstrates how bioinformatics, transcriptomics, and artificial in
 
 ---
 
+## Future AI Development
+
+Planned future improvements include:
+
+- Deep learning for transcriptomics
+- Cancer biomarker prediction
+- Gene expression classification
+- Autoencoder anomaly detection
+- Multi-omics integration
+- Explainable AI for bioinformatics
+
+  ---
+  ## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ag48665/nasa-spaceflight-ai.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+---
+
+  
 ## Author
 
 Agata Gabara
