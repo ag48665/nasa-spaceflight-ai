@@ -37,7 +37,11 @@ NASA GeneLab RNA-seq datasets:
 - GLDS-168
 - GLDS-245
 
+https://osdr.nasa.gov/bio/repo/data/studies/OSD-245
+https://osdr.nasa.gov/bio/repo/data/studies/OSD-168
+
 These datasets contain transcriptomics measurements from mouse biological samples exposed to spaceflight-related conditions.
+
 
 ---
 
