@@ -263,8 +263,8 @@ Planned future improvements include:
 - Multi-omics integration
 - Explainable AI for bioinformatics
 
-  ---
-  ## Installation
+---
+## Installation
 
 Clone the repository:
 
