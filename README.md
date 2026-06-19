@@ -1,32 +1,94 @@
 # NASA Spaceflight AI – RNA-seq Transcriptomics Analysis
 
-## Overview
+## Project Overview
 
-This project analyzes NASA spaceflight RNA-seq transcriptomics datasets using Python, bioinformatics workflows, data visualization, and machine learning techniques.
+This project analyzes NASA GeneLab RNA-seq transcriptomics datasets using Python, bioinformatics workflows, data visualization, and machine learning techniques.
 
-The analysis focuses on gene expression patterns observed in biological samples exposed to spaceflight conditions.
+The analysis focuses on gene expression patterns observed in biological samples exposed to spaceflight-related conditions.
 
-The project includes:
-
-- RNA-seq preprocessing
-- Exploratory transcriptomics analysis
-- PCA dimensionality reduction
-- Heatmap visualization
-- Highly expressed gene detection
-- Comparative transcriptomics
-- AI/ML clustering methods
+By combining transcriptomics, exploratory data analysis, and machine learning, this project investigates how biological systems may respond to environmental stressors associated with spaceflight.
 
 ---
 
-## Technologies Used
+## Project Highlights
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
+✔ NASA GeneLab RNA-seq analysis
+
+✔ PCA transcriptomic exploration
+
+✔ Gene expression profiling
+
+✔ Heatmap visualization
+
+✔ Comparative transcriptomics
+
+✔ Machine learning clustering
+
+✔ Reproducible Python workflow
+
+✔ Space biology data analysis
+
+---
+
+## Main Findings
+
+### Spaceflight samples exhibit distinct transcriptomic patterns
+
+Principal Component Analysis (PCA) revealed substantial variability between biological samples exposed to spaceflight-related conditions.
+
+### Highly expressed genes dominate transcriptomic signatures
+
+Several genes showed consistently elevated expression levels across analyzed datasets and contributed strongly to overall expression patterns.
+
+### Machine learning identifies transcriptomic clusters
+
+K-Means clustering grouped genes into distinct expression profiles, suggesting underlying biological programs and expression states.
+
+### Transcriptomics can support space biology research
+
+Gene expression analysis provides insight into molecular adaptations potentially associated with microgravity, radiation exposure, and physiological stress.
+
+---
+
+## Results
+
+### NASA OSD-245 Expression Profiles
+
+![OSD245 Expression Profiles](figures/osd245_expression_profiles.png)
+
+Gene expression distributions across RNA-seq samples.
+
+---
+
+### PCA of RNA-seq Expression Data
+
+![PCA](figures/pca_spaceflight.png)
+
+PCA visualization of transcriptomic variability across samples.
+
+---
+
+### Top Expressed Genes Heatmap
+
+![Heatmap](figures/top_genes_heatmap.png)
+
+Heatmap showing expression patterns of highly expressed genes.
+
+---
+
+### Top Highly Expressed Genes
+
+![Top Genes](figures/top10_genes_osd245.png)
+
+Most highly expressed genes identified within the OSD-245 dataset.
+
+---
+
+### Top Expressed Genes in NASA Spaceflight Samples
+
+![Top Spaceflight Genes](figures/top10_spaceflight_genes.png)
+
+Comparison of highly expressed genes across analyzed spaceflight datasets.
 
 ---
 
@@ -34,14 +96,43 @@ The project includes:
 
 NASA GeneLab RNA-seq datasets:
 
-- GLDS-168
-- GLDS-245
+* GLDS-168
+* GLDS-245
 
-https://osdr.nasa.gov/bio/repo/data/studies/OSD-245
+Sources:
+
 https://osdr.nasa.gov/bio/repo/data/studies/OSD-168
 
-These datasets contain transcriptomics measurements from mouse biological samples exposed to spaceflight-related conditions.
+https://osdr.nasa.gov/bio/repo/data/studies/OSD-245
 
+These datasets contain transcriptomic measurements from mouse biological samples exposed to spaceflight-related environments.
+
+---
+
+## Technologies Used
+
+### Bioinformatics
+
+* RNA-seq transcriptomics
+* Gene expression analysis
+* Comparative transcriptomics
+
+### Data Science
+
+* Principal Component Analysis (PCA)
+* Machine Learning
+* Clustering
+* Exploratory Data Analysis (EDA)
+
+### Tools
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
 
 ---
 
@@ -69,55 +160,23 @@ nasa-spaceflight-ai/
 
 ### 1. Data Loading
 
-RNA-seq transcriptomics datasets were loaded into Pandas DataFrames and preprocessed for downstream analysis.
+RNA-seq transcriptomics datasets were loaded into Pandas DataFrames and prepared for downstream analysis.
 
 ### 2. Gene Expression Analysis
 
-The project identifies highly expressed genes using normalized transcriptomics counts and TPM values.
+Gene expression distributions were explored to identify highly expressed genes and transcriptomic trends.
 
-### 3. PCA Analysis
+### 3. Principal Component Analysis (PCA)
 
-Principal Component Analysis (PCA) was applied to reduce dimensionality and visualize transcriptomic variability across samples.
+PCA was applied to reduce dimensionality and visualize sample-to-sample variability.
 
 ### 4. Heatmap Visualization
 
-Heatmaps were generated to visualize top expressed genes and expression intensity patterns.
+Heatmaps were generated to visualize expression patterns and identify dominant transcriptional programs.
 
-### 5. Machine Learning
+### 5. Machine Learning Clustering
 
-K-Means clustering was used to identify gene expression clusters and transcriptomic patterns.
-
----
-
-## Results
-
-### NASA OSD-245 Expression Profiles
-
-![OSD245 Expression Profiles](figures/osd245_expression_profiles.png)
-
----
-
-### PCA of RNA-seq Expression Data
-
-![PCA](figures/pca_spaceflight.png)
-
----
-
-### Top Expressed Genes Heatmap
-
-![Heatmap](figures/top_genes_heatmap.png)
-
----
-
-### Top Highly Expressed Genes
-
-![Top Genes](figures/top10_genes_osd245.png)
-
----
-
-### Top Expressed Genes in NASA Spaceflight Sample
-
-![Top Spaceflight Genes](figures/top10_spaceflight_genes.png)
+K-Means clustering was used to identify transcriptomic groups and expression patterns within the data.
 
 ---
 
@@ -138,136 +197,91 @@ df['cluster'] = kmeans.fit_predict(X_scaled)
 ```
 
 ---
-## Key Findings
 
-- Identified highly expressed genes across NASA spaceflight samples
-- Detected transcriptomic outliers using PCA
-- Visualized expression variability using heatmaps
-- Applied machine learning clustering to RNA-seq data
-- Generated comparative transcriptomics visualizations
-  
----
+## Biological Interpretation
 
-## Biological Interpretation of Results
+The RNA-seq analysis revealed substantial variability in gene expression profiles across NASA spaceflight-related biological samples.
 
-The RNA-seq transcriptomics analysis revealed significant variability in gene expression profiles across NASA spaceflight-related biological samples.
+Principal Component Analysis identified transcriptomic differences between samples, suggesting potential biological responses to environmental stressors associated with spaceflight.
 
-Principal Component Analysis (PCA) demonstrated distinct transcriptomic variability between samples, suggesting that spaceflight conditions may influence biological regulation and gene activity. Several samples appeared as strong outliers, indicating potentially unique molecular responses to environmental stressors such as microgravity, radiation exposure, oxidative stress, or altered immune regulation.
+Highly expressed genes may be involved in:
 
-The heatmap and highly expressed gene analysis identified subsets of genes with exceptionally high transcriptional activity. These genes may play important roles in:
+* cellular stress responses
+* metabolic adaptation
+* mitochondrial function
+* immune regulation
+* tissue remodeling
+* radiation response pathways
 
-- cellular stress response
-- mitochondrial activity
-- immune system regulation
-- tissue remodeling
-- metabolic adaptation
-- radiation response pathways
-
-The clustering analysis using machine learning methods further demonstrated that transcriptomic profiles can be grouped into biologically distinct expression patterns. This suggests the possibility of identifying molecular signatures associated with physiological adaptation to spaceflight conditions.
+The clustering analysis further demonstrated that transcriptomic profiles can be grouped into distinct expression states, highlighting the usefulness of machine learning approaches for exploring complex biological datasets.
 
 ---
 
-## Potential Medical and Clinical Applications
+## Potential Applications
 
-This type of transcriptomics and AI analysis could potentially support biomedical research and future clinical applications in several areas:
+### Space Biology
 
-### Space Medicine
-
-- monitoring astronaut health during long-duration missions
-- detecting early biological stress responses
-- studying radiation-induced molecular damage
-- identifying biomarkers associated with spaceflight adaptation
+* astronaut health monitoring research
+* biological stress response analysis
+* radiation response studies
+* molecular adaptation research
 
 ### Precision Medicine
 
-Doctors and biomedical researchers could potentially use similar RNA-seq + AI pipelines to:
+* biomarker discovery
+* disease transcriptomics
+* cancer genomics research
+* personalized medicine research
 
-- detect abnormal gene expression patterns
-- identify disease biomarkers
-- support cancer transcriptomics analysis
-- monitor immune dysfunction
-- study neurodegenerative disorders
-- personalize treatment strategies
+### Computational Biology
 
-### Early Disease Detection
-
-Machine learning models trained on transcriptomics data may help identify:
-
-- early-stage cancer signatures
-- inflammatory disorders
-- metabolic dysfunction
-- rare molecular abnormalities
-- immune system dysregulation
+* transcriptomic pattern discovery
+* machine learning for genomics
+* biological data exploration
+* large-scale omics analysis
 
 ---
 
-## Example Future AI Extensions
+## Skills Demonstrated
 
-### Classification Models
+### Bioinformatics
 
-Future versions of this project could include supervised machine learning models such as:
+* RNA-seq analysis
+* Transcriptomics
+* Gene expression profiling
+* Biological interpretation
 
-- Random Forest
-- XGBoost
-- Support Vector Machines (SVM)
-- Neural Networks
+### Data Science
 
-These models could classify biological samples into categories such as:
+* Principal Component Analysis (PCA)
+* Machine learning clustering
+* Data visualization
+* Exploratory data analysis
 
-- healthy vs diseased
-- control vs spaceflight-exposed
-- low-risk vs high-risk molecular profiles
+### Tools
 
----
-
-## Anomaly Detection
-
-AI anomaly detection models could identify unusual transcriptomic patterns that may represent:
-
-- rare molecular responses
-- disease-associated abnormalities
-- radiation damage
-- immune overactivation
-- unknown biological events
-
-Potential methods include:
-
-- Isolation Forest
-- Autoencoders
-- DBSCAN
-- One-Class SVM
-
----
-
-## Scientific Value
-
-This project demonstrates how bioinformatics, transcriptomics, and artificial intelligence can be integrated to analyze complex biological systems and support future biomedical discovery.
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
 ---
 
 ## Future Improvements
 
-- Deep learning models for transcriptomics
-- Differential gene expression analysis
-- Biological pathway enrichment analysis
-- Outlier and anomaly detection
-- Multi-omics integration
-- Interactive dashboards
+* Differential gene expression analysis
+* Pathway enrichment analysis
+* Gene set enrichment analysis (GSEA)
+* Deep learning approaches for transcriptomics
+* Multi-omics integration
+* Interactive dashboards
+* Explainable AI methods for biological interpretation
 
 ---
 
-## Future AI Development
-
-Planned future improvements include:
-
-- Deep learning for transcriptomics
-- Cancer biomarker prediction
-- Gene expression classification
-- Autoencoder anomaly detection
-- Multi-omics integration
-- Explainable AI for bioinformatics
-
----
 ## Installation
 
 Clone the repository:
@@ -282,17 +296,34 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run Jupyter Notebook:
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
+
 ---
 
-  
+## License
+
+This repository is provided for educational and portfolio purposes.
+
+---
+
 ## Author
 
-Agata Gabara
+**Agata Gabara**
 
-GitHub Repository:
-https://github.com/ag48665/nasa-spaceflight-ai
+MSc Bioinformatics Student
+
+Research Interests:
+
+* Transcriptomics
+* Space Biology
+* Cancer Genomics
+* Computational Biology
+* Machine Learning for Life Sciences
+
+GitHub: https://github.com/ag48665
+
+LinkedIn: https://www.linkedin.com/in/agatha-gabara-06494a37/
